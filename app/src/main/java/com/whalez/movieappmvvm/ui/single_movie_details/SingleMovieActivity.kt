@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_single_movie.*
 import java.text.NumberFormat
 import java.util.*
 
-class SingleMovie : AppCompatActivity() {
+class SingleMovieActivity : AppCompatActivity() {
 
     private lateinit var viewModel: SingleMovieViewModel
     private lateinit var movieRepository: MovieDetailsRepository

@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.whalez.movieappmvvm.ui.single_movie_details.SingleMovie" />
+        <activity android:name="com.whalez.movieappmvvm.ui.single_movie_details.SingleMovieActivity" />
         <activity android:name=".ui.popular_movie.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

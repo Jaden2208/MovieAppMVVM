@@ -13,7 +13,7 @@ import com.whalez.movieappmvvm.R
 import com.whalez.movieappmvvm.data.api.POSTER_BASE_URL
 import com.whalez.movieappmvvm.data.repository.NetworkState
 import com.whalez.movieappmvvm.data.vo.Movie
-import com.whalez.movieappmvvm.ui.single_movie_details.SingleMovie
+import com.whalez.movieappmvvm.ui.single_movie_details.SingleMovieActivity
 import kotlinx.android.synthetic.main.movie_list_item.view.*
 import kotlinx.android.synthetic.main.network_state_item.view.*
 
@@ -84,7 +84,7 @@ class PopularMoviePagedListAdapter(val context: Context) :
                 .into(itemView.cv_iv_movie_poster)
 
             itemView.setOnClickListener {
-                val intent = Intent(context, SingleMovie::class.java)
+                val intent = Intent(context, SingleMovieActivity::class.java)
                 intent.putExtra("id", movie?.id)
                 context.startActivity(intent)
             }
