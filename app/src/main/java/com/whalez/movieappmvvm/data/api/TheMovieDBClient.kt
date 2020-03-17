@@ -12,6 +12,9 @@ const val BASE_URL = "https://api.themoviedb.org/3/"
 
 const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 
+const val FIRST_PAGE = 1
+const val POST_PER_PAGE = 20
+
 // https://api.themoviedb.org/3/movie/popular?api_key=3a1721be25cfab49572c0fa487fa4258&page=1
 // https://api.themoviedb.org/3/movie/454626?api_key=3a1721be25cfab49572c0fa487fa4258
 // https://image.tmdb.org/t/p/w342//aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg
