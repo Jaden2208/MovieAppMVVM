@@ -1,10 +1,10 @@
-package com.whalez.movieappmvvm
+package com.whalez.movieappmvvm.ui.popular_movie
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.whalez.movieappmvvm.R
 import com.whalez.movieappmvvm.ui.single_movie_details.SingleMovie
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
