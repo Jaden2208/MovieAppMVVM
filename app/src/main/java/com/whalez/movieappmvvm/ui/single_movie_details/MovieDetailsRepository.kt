@@ -1,4 +1,4 @@
-package com.whalez.movieappmvvm.single_movie_details
+package com.whalez.movieappmvvm.ui.single_movie_details
 
 import androidx.lifecycle.LiveData
 import com.whalez.movieappmvvm.data.api.TheMovieDBInterface
@@ -7,7 +7,7 @@ import com.whalez.movieappmvvm.data.repository.NetworkState
 import com.whalez.movieappmvvm.data.vo.MovieDetails
 import io.reactivex.disposables.CompositeDisposable
 
-class MovieDetailRepository(private val apiService: TheMovieDBInterface) {
+class MovieDetailsRepository(private val apiService: TheMovieDBInterface) {
 
     lateinit var movieDetailsNetworkDataSource: MovieDetailsNetworkDataSource
 
