@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="네트워크 에러!!"
+            android:text="@string/network_error_msg"
             android:visibility="gone" />
 
         <ScrollView

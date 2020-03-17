@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MovieAppMVVM</string>
+    <string name="network_error_msg">네트워크 에러!!</string>
 </resources>
