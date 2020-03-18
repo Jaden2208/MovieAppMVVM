@@ -17,7 +17,7 @@ import com.whalez.movieappmvvm.ui.single_movie_details.SingleMovieActivity
 import kotlinx.android.synthetic.main.movie_list_item.view.*
 import kotlinx.android.synthetic.main.network_state_item.view.*
 
-class PopularMoviePagedListAdapter(val context: Context) :
+class PopularMoviePagedListAdapter(private val context: Context) :
     PagedListAdapter<Movie, RecyclerView.ViewHolder>(MovieDiffCallback()) {
 
     val MOVIE_VIEW_TYPE = 1

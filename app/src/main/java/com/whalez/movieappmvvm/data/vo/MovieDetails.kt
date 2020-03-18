@@ -1,6 +1,5 @@
 package com.whalez.movieappmvvm.data.vo
 
-
 import com.google.gson.annotations.SerializedName
 
 data class MovieDetails(
@@ -20,5 +19,4 @@ data class MovieDetails(
     val video: Boolean,
     @SerializedName("vote_average")
     val rating: Double
-
 )

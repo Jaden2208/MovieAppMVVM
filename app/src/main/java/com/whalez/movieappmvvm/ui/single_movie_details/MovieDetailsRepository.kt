@@ -9,7 +9,7 @@ import io.reactivex.disposables.CompositeDisposable
 
 class MovieDetailsRepository(private val apiService: TheMovieDBInterface) {
 
-    lateinit var movieDetailsNetworkDataSource: MovieDetailsNetworkDataSource
+    private lateinit var movieDetailsNetworkDataSource: MovieDetailsNetworkDataSource
 
     fun fetchSingleMovieDetails(
         compositeDisposable: CompositeDisposable,

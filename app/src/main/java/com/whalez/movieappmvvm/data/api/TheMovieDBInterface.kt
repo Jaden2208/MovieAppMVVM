@@ -19,5 +19,4 @@ interface TheMovieDBInterface {
     @GET("movie/{movie_id}")
     fun getMovieDetails(@Path("movie_id") id: Int): Single<MovieDetails>
 
-
 }
