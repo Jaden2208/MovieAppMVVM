@@ -44,13 +44,14 @@ class SingleMovieActivity : AppCompatActivity() {
         })
     }
 
-    @SuppressLint("SetTextI18n")
-    fun bindUI(it: MovieDetails) {
+
+    private fun bindUI(it: MovieDetails) {
         tv_title.text = it.title
         tv_tagline.text = it.tagline
         tv_release_date.text = it.releaseDate
         tv_rating.text = it.rating.toString()
-        tv_runtime.text =it.runtime.toString() + " minutes"
+        @SuppressLint("SetTextI18n")
+        tv_runtime.text = it.runtime.toString() + " minutes"
         tv_overview.text = it.overview
 
         val formatCurrency = NumberFormat.getCurrencyInstance(Locale.US)
@@ -63,9 +64,11 @@ class SingleMovieActivity : AppCompatActivity() {
             .into(iv_movie_poster)
     }
 
+
     private fun getViewModel(movieId: Int): SingleMovieViewModel {
         return ViewModelProvider(this, object: ViewModelProvider.Factory {
             override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+                @Suppress("UNCHECKED_CAST")
                 return SingleMovieViewModel(movieRepository, movieId) as T
             }
         })[SingleMovieViewModel::class.java]

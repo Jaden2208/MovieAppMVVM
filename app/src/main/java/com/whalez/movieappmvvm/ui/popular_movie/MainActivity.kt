@@ -16,7 +16,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var viewModel: MainActivityViewModel
-
     lateinit var movieRepository: MoviePagedListRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val apiService: TheMovieDBInterface = TheMovieDBClient.getClient()
-
         movieRepository = MoviePagedListRepository(apiService)
 
         viewModel = getViewModel()
