@@ -5,7 +5,7 @@
 
 ### Demo
 
- Try demo on [HERE](https://appetize.io/app/hcc6rpwvqutz2qe63kg9vc4nfr)!
+ Try demo on [HERE](https://appetize.io/app/vpkhc07n1w4nu7kbvdhtb6qq5r?device=pixel4&scale=75&orientation=portrait&osVersion=10.0)!
  
 
 ### 사용된 기술 스택
